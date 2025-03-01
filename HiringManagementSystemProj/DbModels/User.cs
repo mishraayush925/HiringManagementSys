@@ -6,8 +6,8 @@ namespace HiringManagementSystemProj.DbModels
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Email { get; set; }
-        public string PasswordHash { get; set; }
+        public string Email { get; set; }   
+        public string PasswordHash { get; set; }  //for now , just use normal strings as password 
         public string Role { get; set; } // "Admin", "Company", "Applicant"
 
         public Company? Company { get; set; }  // Nullable: Only for companies
