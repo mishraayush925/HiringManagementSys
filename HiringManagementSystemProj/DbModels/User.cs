@@ -5,7 +5,7 @@ namespace HiringManagementSystemProj.DbModels
     public class User
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Name { get; set; } // can be anykind of user -applicant or admin 
         public string Email { get; set; }   
         public string PasswordHash { get; set; }  //for now , just use normal strings as password 
         public string Role { get; set; } // "Admin", "Company", "Applicant"
