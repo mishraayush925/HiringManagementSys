@@ -1,17 +1,30 @@
-﻿using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+﻿using System.ComponentModel.DataAnnotations;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace HiringManagementSystemProj.DbModels
 {
     public class User
     {
+        [Key]
         public int Id { get; set; }
-        public string Name { get; set; } // can be anykind of user -applicant or admin 
-        public string Email { get; set; }   
-        public string PasswordHash { get; set; }  //for now , just use normal strings as password 
-        public string Role { get; set; } // "Admin", "Company", "Applicant"
 
-        public Company? Company { get; set; }  // Nullable: Only for companies
-        public Applicant? Applicant { get; set; }  // Nullable: Only for applicants
+        [Required]
+        public string Name { get; set; }
+
+        [Required]
+        public string Role { get; set; } // "Applicant" or "HiringPerson"
+
+        [Required]
+        public string Email { get; set; }
+
+        [Required]
+        public string Password { get; set; }
+
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        // Navigation properties
+        public virtual Applicant Applicant { get; set; }
+        public virtual HiringPerson HiringPerson { get; set; }
     }
 
 }

@@ -1,18 +1,24 @@
-﻿using static System.Net.Mime.MediaTypeNames;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace HiringManagementSystemProj.DbModels
 {
     public class Job
     {
+        [Key]
         public int Id { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string Location { get; set; }
-        public string JobType { get; set; } // "Full-Time", "Part-Time", "Remote"
-        public decimal Salary { get; set; }
-        public int CompanyId { get; set; }
-        public Company Company { get; set; }
-        public List<Application> Applications { get; set; } = new List<Application>();
+
+        [ForeignKey("HiringPerson")]
+        public int PostedBy { get; set; }
+        public HiringPerson HiringPerson { get; set; }
+
+        public DateTime ApplyBefore { get; set; }
+        public long SalaryOffered { get; set; }
+        public string SkillsRequired { get; set; }
+        public int ExpRequired { get; set; }
+
+        public virtual ICollection<Application> Applications { get; set; }
     }
 
 }

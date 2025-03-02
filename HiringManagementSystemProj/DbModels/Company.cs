@@ -1,14 +1,19 @@
-﻿namespace HiringManagementSystemProj.DbModels
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace HiringManagementSystemProj.DbModels
 {
     public class Company
     {
+        [Key]
         public int Id { get; set; }
+
+        [Required]
         public string Name { get; set; }
+
         public string Description { get; set; }
         public string Location { get; set; }
-        public int UserId { get; set; }
-        public User User { get; set; }  // Navigation property
-        public List<Job> Jobs { get; set; } = new List<Job>();
+
+        public virtual ICollection<HiringPerson> HiringPersons { get; set; }
     }
 
 }
