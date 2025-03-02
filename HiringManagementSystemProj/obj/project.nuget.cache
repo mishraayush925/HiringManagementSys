@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D/WQJiamdKTnF1KhJ2EHgSr7OFW95mb7oI+H3i7pIZ5AlgAj41f4JoIbQAwXtxMnSv/hA1E/Sti02BKcYVt+Cw==",
+  "dgSpecHash": "Hn/yV55ulpiyThVEMYjCEToWVp+zv3pPiwveb31dpupIF45pfrYHPzMI0Ln3hu4eqdo++MDYP4DM/R6j0J5Mtw==",
   "success": true,
   "projectFilePath": "E:\\DotNetLearn\\HiringManagementSystemSoln\\HiringManagementSys\\HiringManagementSystemProj\\HiringManagementSystemProj.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\mishr\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\mishr\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\mishr\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\mishr\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\mishr\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\mishr\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\mishr\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

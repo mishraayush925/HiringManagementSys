@@ -74,3 +74,4 @@ E:\DotNetLearn\HiringManagementSystemSoln\HiringManagementSys\HiringManagementSy
 E:\DotNetLearn\HiringManagementSystemSoln\HiringManagementSys\HiringManagementSystemProj\obj\Debug\net7.0\HiringManagementSystemProj.pdb
 E:\DotNetLearn\HiringManagementSystemSoln\HiringManagementSys\HiringManagementSystemProj\obj\Debug\net7.0\HiringManagementSystemProj.genruntimeconfig.cache
 E:\DotNetLearn\HiringManagementSystemSoln\HiringManagementSys\HiringManagementSystemProj\obj\Debug\net7.0\ref\HiringManagementSystemProj.dll
+E:\DotNetLearn\HiringManagementSystemSoln\HiringManagementSys\HiringManagementSystemProj\bin\Debug\net7.0\BouncyCastle.Crypto.dll

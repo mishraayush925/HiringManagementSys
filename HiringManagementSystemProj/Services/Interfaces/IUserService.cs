@@ -1,6 +1,11 @@
-﻿namespace HiringManagementSystemProj.Services.Interfaces
+﻿using HiringManagementSystemProj.DbModels;
+using HiringManagementSystemProj.DTOs;
+
+namespace HiringManagementSystemProj.Services.Interfaces
 {
-    public class IUserService
+    public interface IUserService
     {
+        Task<User> RegisterUserAsync(UserDto userDto);
     }
+
 }

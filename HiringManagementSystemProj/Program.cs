@@ -1,8 +1,14 @@
+using HiringManagementSystemProj.Repository.Implementations;
+using HiringManagementSystemProj.Repository.Interfaces;
+using HiringManagementSystemProj.Services.Implementations;
+using HiringManagementSystemProj.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
